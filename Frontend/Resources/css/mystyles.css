@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/123/702/385/technology-bitcoin-coin-cryptocurrency-money-hd-wallpaper-e8d2f517c29e74cd1878dceaf7a39c66.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ticker-container {
@@ -35,7 +38,8 @@ body {
     justify-content: flex-end;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: right;
     margin-left: 60%;
 }
@@ -44,6 +48,7 @@ body {
    width: 20%;
    text-align: center;
    font-size: small;
+   text-decoration: none;
 }
 
 .tab-item:not(:last-child)::after {
@@ -56,6 +61,14 @@ body {
     text-decoration: none;
 } 
 
+.tab-item a:visited {
+    color: #fff;
+}
+
+.tab-item a:hover{
+    color: red;
+}
+
 .tab-content {
     display: none;
 }
@@ -65,7 +78,6 @@ body {
 }
 
 .button-72 {
-  
   align-items: center;
   background-color: initial;
   background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
@@ -101,4 +113,17 @@ body {
     font-size: small;
     padding: 5px 5px;
   }
+}
+
+.text-container {
+    display: inline-block;
+    margin: 20px;
+    padding: 25px;
+    border-width: 4px;
+    border-color: #000;
+    border-radius: 50px;
+    line-height: 0.8;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: large;
+
 }
