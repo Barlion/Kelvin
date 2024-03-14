@@ -12,6 +12,8 @@ body {
     position: relative;
     background-color: #333;
     color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #ticker {
@@ -31,6 +33,11 @@ body {
     display: inline;
     padding: 10px 20px;
     font-size: 18px;
+    border-right: 1px solid #fff;
+}
+
+#ticker li:last-child {
+    border-right: none;
 }
 
 .tab-cont {
