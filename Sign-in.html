@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Design by foolishdeveloper.com -->
-    <title>TradeWinds Sign-up</title>
+    <title>TradeWinds Sign-In</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -55,7 +55,6 @@ form{
     width: 400px;
     margin-top: 30px;
     background-color: rgba(255,255,255,0.13);
-    display: inline-block;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -64,7 +63,7 @@ form{
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 25px 25px;
+    padding: 50px 35px;
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -79,7 +78,7 @@ form h3{
     line-height: 42px;
     text-align: center;
     text-decoration: none;
-    background-color: rgba(80, 78, 78, 0.7);
+    background-color: rgba(79, 79, 79, 0.7);
     border-radius: 15px;
 }
 
@@ -105,7 +104,6 @@ input{
 }
 button{
     margin-top: 50px;
-    margin-bottom: 20px;
     width: 100%;
     background-color: #ffffff;
     color: #080710;
@@ -115,10 +113,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-.social{
-  margin-top: 30px;
-  display: flex;
-}
+
 .social div{
   background: red;
   width: 150px;
@@ -146,41 +141,17 @@ button{
         <div class="shape"></div>
     </div>
     <form>
-        <h3><a href="Sign-in.html">Sign-In</a> || Sign-Up </h3>
+        <h3>Sign-In || <a href="Sign-up.html">Sign-Up</a></h3>
 
-        <label for="name">Full Name:</label>
-        <input type="text" placeholder="Your Full Name" id="name">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
 
-        <label for="password">Password:</label>
+        <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <label for="password">Repeat Password:</label>
-        <input type="password" placeholder="Password" id="password">
+        <button>Log In</button><br><br>
 
-        <label for="email">Password</label>
-        <input type="email" placeholder="Your Email" id="email">
-
-        <label for="Bitcoin Id">Your BITCOIN Account Id:</label>
-        <input type="text" placeholder="Your Bitcoin Acc. Id" id="Bitcoin Id">
-
-        <label for="USDT Id">Your USDT [TRC 20] Account Id:</label>
-        <input type="text" placeholder="Your USDT Acc. Id" id="USDT Id">
-
-        <label for="Ethereum Id">Your ETHEREUM Account Id:</label>
-        <input type="text" placeholder="Your Ethereum Acc. Id" id="Ethereum Id">
-
-        <label for="Secret Question">Your Secret Question:</label>
-        <input type="text" placeholder="Your Secret Question" id="Secret Question">
-
-        <label for="Secret Answer">Your Secret Answer:</label>
-        <input type="text" placeholder="Your Secret Answer" id="Secret Answer">
-
-        <label for="Upline">Upline:</label>
-        <input type="text" placeholder="Upline" id="Upline">
-
-        <button>Log In</button><br>
-
-        <p>Already have an account? <a href="Sign-in.html">Sign-In</a></p>
+        <p>Don't have an account? <a href="Sign-up.html">Sign-Up</a></p>
     </form>
 </body>
 </html>

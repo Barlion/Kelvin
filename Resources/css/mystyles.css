@@ -140,7 +140,7 @@ body {
 
 .text-container1 {
     display: inline-block;
-    margin-left: 315px;
+    margin-left: 320px;
     padding: 20px;
     border-width: 4px;
     border-color: #000;
@@ -166,8 +166,22 @@ a:hover {
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
-    line-height: 0.8;
+    line-height: 1.0;
     background-color: rgba(255, 255, 255, 0.7);
     font-size: large;
+}
+
+.text-container3 {
+    margin: 10px;
+    padding: 20px;
+    border-width: 4px;
+    border-color: #000;
+    border-radius: 50px;
+    line-height: 1.0;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
