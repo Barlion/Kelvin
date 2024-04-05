@@ -134,20 +134,20 @@ body {
     border-radius: 50px;
     line-height: 0.8;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: large;
+    font-size: small;
 
 }
 
 .text-container1 {
     display: inline-block;
-    margin-left: 320px;
-    padding: 20px;
+    margin-left: 20em;
+    padding: 2em;
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
     line-height: 0.8;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: large;
+    font-size: small;
 }
 
 a {
@@ -168,10 +168,11 @@ a:hover {
     border-radius: 50px;
     line-height: 1.0;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: large;
+    font-size: small;
 }
 
 .text-container3 {
+    text-indent: 30px;
     margin: 10px;
     padding: 20px;
     border-width: 4px;
@@ -179,9 +180,45 @@ a:hover {
     border-radius: 50px;
     line-height: 1.0;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: large;
+    font-size: small;
     display: flex;
+    backdrop-filter: blur(10px);
     align-items: center;
     justify-content: flex-start;
 }
 
+.text-container4 {
+    text-indent: 30px;
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+    border-width: 4px;
+    border-color: #000;
+    border-radius: 50px;
+    line-height: 1.0;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: small;
+}
+
+.contact {
+    text-align: justify;
+    height: auto;
+    width: 98% ;
+    padding: 20px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, rgb(177, 4, 4), rgb(9, 9, 9));
+}
+
+.buttoner {
+    background-color: #84010a;
+    color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
