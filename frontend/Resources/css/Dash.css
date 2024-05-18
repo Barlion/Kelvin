@@ -18,9 +18,9 @@ body {
     border-bottom: 1px solid #ddd;
     height: 35px;
 }
-.header .logo img {
-    margin-left:0px ;
-    height: 80px;
+.logo img {
+    margin-left:0% ;
+    height: 70px;
 
 }
 .header .welcome-message {
@@ -95,6 +95,7 @@ background-color: #333; /* Adjust background color */
 padding: 5px;
 }
 .icon-link {
+position: relative;
 display: block;
 padding: 10px;
 transition: background-color 0.3s;
@@ -112,6 +113,23 @@ margin: 0 auto;
 }
 .icon-link:hover {
     background-color: #444;
+}
+.popup {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.icon-link:hover .popup {
+    display: block;
 }
 
 
@@ -180,4 +198,26 @@ margin: 0 auto;
 .copy-link {
     margin-left: 10%;
     margin-top: 20px;
+}
+
+.text-container1 {
+    margin-left: 10%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px,2fr));
+    gap: 70px;
+}
+.box1 {
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.box1 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
 }
