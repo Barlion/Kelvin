@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.textarea {
+    margin-top: 10px;
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: medium;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    height: 35px;
+}
+.header .logo img {
+    margin-left:0px ;
+    height: 80px;
+
+}
+.header .welcome-message {
+    /* Add your welcome message styles here */
+}
+.buttons {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+}
+.buttons:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+.buttons:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.buttons:hover {
+color: #ffffff;
+border: 1px solid #000000;
+}
+
+.buttons:hover:before {
+top: -35%;
+background-color: #39bda7;
+transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.buttons:hover:after {
+top: -45%;
+background-color: #d42626;
+transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+.navigation-bar {
+margin-top: 30px;
+position: fixed;
+top: 7%;
+left: 0;
+width: 5%; /* Adjust as needed */
+height: 90%;
+background-color: #333; /* Adjust background color */
+padding: 5px;
+}
+.icon-link {
+display: block;
+padding: 10px;
+transition: background-color 0.3s;
+}
+
+.icon-link img {
+width: 60%; /* Adjust icon size */
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+.icon-link:active, .icon-link.active {
+    background-color: #555;
+}
+.icon-link:hover {
+    background-color: #444;
+}
+
+
+.main-content {
+/* Add your main content styles here */
+}
+.account-balance-section {
+/* Add your account balance section styles here */
+}
+.account-balance-section .h4 {
+    margin-left: 10%;
+    color: #5c6bc0;
+}
+.account-detail-section {
+/* Add your account detail section styles here */
+}
+
+.current-balance {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.current-balance-box {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border: 2px solid #5c6bc0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px;
+}
+
+.current-balance-box span {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #5c6bc0
+}
+
+.text-container {
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 20px;
+}
+.box {
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.box span {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.copy-link {
+    margin-left: 10%;
+    margin-top: 20px;
+}
