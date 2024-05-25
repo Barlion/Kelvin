@@ -23,7 +23,7 @@ label {
     height: 35px;
 }
 .logo img {
-    margin-left:0% ;
+    margin-left:0px ;
     height: 70px;
 
 }
@@ -283,4 +283,107 @@ margin: 0 auto;
     height: auto;
     padding: 20px;
     background-image: linear-gradient(to bottom right, rgb(88, 21, 21), rgb(9, 9, 9));
+}
+
+
+.container {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.balance, .withdrawals {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.value {
+    font-weight: bold;
+    color: #007b00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f59c00;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+}
+
+.currency img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.available {
+    color: #007b00;
+    font-weight: bold;
+}
+
+.pending {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.account {
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+}
+
+.form-container {
+    width: 80%;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 30%;
+    font-weight: bold;
+}
+
+.form-group .input {
+    width: 65%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group input {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }

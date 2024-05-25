@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="Resources/css/Dash.css">
+    <title>Magnetic Trading</title>
 </head>
 <body>
     <div class="header">
@@ -17,11 +18,11 @@
         <a href="Dashboard.html" class="icon-link"><img src="Resources/img/Dashboard.png" alt="Dashboard"><div class="popup">Dashboard</div></a>
         <a href="Deposit.html" class="icon-link"><img src="Resources/img/Money.png" alt="Funds"><div class="popup">Make Deposit</div></a>
         <a href="Withdraw.html" class="icon-link"><img src="Resources/img/Withdraw.png" alt="Withdraw"><div class="popup">Withdraw</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/History.png" alt="History"><div class="popup">Earnings History</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/Banners.png" alt="Banners"><div class="popup">Your Banners</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/Links.png" alt="Ref. Links"><div class="popup">References</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/Account.png" alt="Edit Account"><div class="popup">Edit Account</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/LogOut.png" alt="Icon 5"><div class="popup">Logout</div></a>
+        <a href="Earnings.html" class="icon-link"><img src="Resources/img/History.png" alt="History"><div class="popup">Earnings History</div></a>
+        <a href="Banners.html" class="icon-link"><img src="Resources/img/Banners.png" alt="Banners"><div class="popup">Your Banners</div></a>
+        <a href="Referrals.html" class="icon-link"><img src="Resources/img/Links.png" alt="Ref. Links"><div class="popup">References</div></a>
+        <a href="Edits.html" class="icon-link"><img src="Resources/img/Account.png" alt="Edit Account"><div class="popup">Edit Account</div></a>
+        <a href="index.html" class="icon-link"><img src="Resources/img/LogOut.png" alt="Icon 5"><div class="popup">Logout</div></a>
     </div>
 
     <script src="Resources/Js/styling.js"></script>
@@ -33,37 +34,47 @@
             <textarea class="textarea">This is Your Link</textarea>
         </div>
         <div class="current-balance"><div class="current-balance-box">Current Balance<br><span>$0.00</span></div></div>
-        <div class="account-balance-section">\
-            <h4 class="titler">Choose Your Plan:</h4>
-            <div class="text-container1">
-                <div class="box1">
-                    Silver Plan<br><span>7%</span><br><br><span>$50 - 2,999</span><br>After 24 hours<br><br>
-                    <span><button class="buttoner" onclick="changeColor(this)">Get Bonus</button><script src="Resources/Js/styling.js"></script></span>
+        <div>
+            <div class="container">
+                <div class="balance">
+                    <div class="label">Account Balance:</div>
+                    <div class="value">$0.00</div>
                 </div>
-
-                <div class="box1">
-                    Gold Plan<br><span>12%</span><br><br><span>$3,000 - 14,000</span><br>After 24 hours<br><br>
-                    <span><button class="buttoner" onclick="changeColor(this)">Get Bonus</button><script src="Resources/Js/styling.js"></script></span>
+                <div class="withdrawals">
+                    <div class="label">Pending Withdrawals:</div>
+                    <div class="value">$</div>
                 </div>
-
-                <div class="box1">
-                    Diamond Plan<br><span>18%</span><br><br><span>$15,000 - UNLIMITED</span><br>After 24 hours<br><br>
-                    <span><button class="buttoner" onclick="changeColor(this)">Get Bonus</button><script src="Resources/Js/styling.js"></script></span>
-                </div>
-
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="processing">Processing</th>
+                            <th>Available</th>
+                            <th>Pending</th>
+                            <th>Account</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="currency"><img src="Resources/img/bitcoin.png" alt="Bitcoin"> BITCOIN</td>
+                            <td class="available">$0.00</td>
+                            <td class="pending">$0.00</td>
+                            <td class="account">not set</td>
+                        </tr>
+                        <tr>
+                            <td class="currency"><img src="Resources/img/usdt.png" alt="USDT"> USDT [TRC 20]</td>
+                            <td class="available">$0.00</td>
+                            <td class="pending">$0.00</td>
+                            <td class="account">not set</td>
+                        </tr>
+                        <tr>
+                            <td class="currency"><img src="Resources/img/ethereum.png" alt="Ethereum"> ETHEREUM</td>
+                            <td class="available">$0.00</td>
+                            <td class="pending">$0.00</td>
+                            <td class="account">not set</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-        <h4 class="titler">Deposit Method:</h4>
-        <div class="text-container2">
-            <div class="box2">
-                <textarea class="textarea">50.00</textarea> $0/ Main Balance <br><br><br>
-                <form>
-                    <label> <input type="radio" name="Bitcoin" value="Bitcoin"> Deposit from Bitcoin </label>
-                    <label> <input type="radio" name="Bitcoin" value="Bitcoin"> Deposit from USDT[TRC 20]</label>
-                    <label> <input type="radio" name="Bitcoin" value="Bitcoin"> Deposit from Ethereum</label>
-                </form>
-            </div>
-            <div class="center"><button class="buttoner" onclick="changeColor(this)">Submit</button><script src="Resources/Js/styling.js"></script></div><br>
         </div>
         <div class="contact">
             <h5>Our Social Media</h5>
