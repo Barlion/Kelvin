@@ -35,7 +35,49 @@
         </div>
         <div class="current-balance"><div class="current-balance-box">Current Balance<br><span>$0.00</span></div></div>
         <div>
-            
+            <div class="transaction-filter">
+                <h2>Select Transaction :</h2>
+                <div class="filters">
+                    <select>
+                        <option>All transactions</option>
+                        <option>Deposit</option>
+                        <option>Withdrawal</option>
+                        <option>Earning</option>
+                        <option>Referal commission</option>
+                    </select>
+                    <select>
+                        <option>All eCurrencies</option>
+                        <option>Bitcoin</option>
+                        <option>Ethereum</option>
+                        <option>USDT</option>
+                    </select>
+                    <input type="date"><br>
+                    <input type="date">
+                </div>
+                <button class="go-btn">Go</button>
+            </div>
+            <div class="transaction-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">No transactions found</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total:</td>
+                            <td colspan="2" class="total-amount">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
         <div class="contact">
             <h5>Our Social Media</h5>
