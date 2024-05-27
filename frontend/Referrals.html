@@ -30,8 +30,11 @@
     <div class="main-content">
         <div class="copy-link"> 
             <button class="buttons">Get Banners</button>
-            <button class="buttons">Copy Referal Link</button><br>
-            <textarea class="textarea">This is Your Link</textarea>
+            <div class="referral-link">
+                <button onclick="copyReferralLink()">Copy Referral Link</button>
+                <span>https://intelligencebotminer.com/?ref=BARLION</span>
+                <script src="Resources/Js/styling.js"></script>
+            </div>
         </div>
         <div class="current-balance"><div class="current-balance-box">Current Balance<br><span>$0.00</span></div></div>
         <div>
@@ -59,38 +62,7 @@
                 </div>
             </div>
         
-            <script>
-                function copyReferralLink() {
-                    const link = document.querySelector('.referral-link span').textContent;
-                    navigator.clipboard.writeText(link).then(() => {
-                        alert('Referral link copied to clipboard');
-                    });
-                }
-        
-                function showBanner(size) {
-                    const sizes = document.querySelectorAll('.banner-sizes button');
-                    sizes.forEach(btn => btn.classList.remove('active'));
-                    event.target.classList.add('active');
-        
-                    const bannerCode = document.getElementById('banner-code');
-                    if (size === '125x125') {
-                        bannerCode.textContent = `
-        <a href="https://intelligencebotminer.com/?ref=BARLION">
-            <img src="https://intelligencebotminer.com/banners/banner125.gif" alt="" width="125" height="125" />
-        </a>`;
-                    } else if (size === '468x60') {
-                        bannerCode.textContent = `
-        <a href="https://intelligencebotminer.com/?ref=BARLION">
-            <img src="https://intelligencebotminer.com/banners/banner468.gif" alt="" width="468" height="60" />
-        </a>`;
-                    } else if (size === '728x90') {
-                        bannerCode.textContent = `
-        <a href="https://intelligencebotminer.com/?ref=BARLION">
-            <img src="https://intelligencebotminer.com/banners/banner728.gif" alt="" width="728" height="90" />
-        </a>`;
-                    }
-                }
-            </script>
+            <script src="Resources/Js/styling.js"></script>
             
         </div>
         <div class="contact">

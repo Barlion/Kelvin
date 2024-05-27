@@ -406,6 +406,7 @@ tbody td {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1%;
     margin-bottom: 20px;
 }
 
