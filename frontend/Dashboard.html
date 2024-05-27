@@ -10,7 +10,7 @@
         <div class="welcome-message">Welcome to Magnetic Trading, User</div>
         <div>
             <button class="buttons">Get Bonus</button>
-            <button class="buttons">Make Deposit</button>
+            <button class="buttons"><a class="butco" href="Deposit.html">Make Deposit</a></button>
             <button class="buttons">Withdraw</button>
         </div>
     </div>
@@ -25,16 +25,7 @@
         <a href="index.html" class="icon-link"><img src="Resources/img/LogOut.png" alt="Icon 5"><div class="popup">Logout</div></a>
     </div>
 
-    <script>
-        document.querySelectorAll('.icon-link').forEach(link =>{
-            link.addEventListener('click',function(e) {
-                document.querySelectorAll('.icon-link').forEach(link=>
-                link.classList.remove('active'));
-
-                this.classList.add('active');
-            });
-        });
-    </script>
+    <script src="Resources/Js/styling.js"></script>
 
     <div class="main-content">
         <div class="copy-link"> 

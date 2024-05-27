@@ -4,6 +4,12 @@ body {
 label {
     margin-left: 10%;
 }
+
+.butco {
+    text-decoration: none;
+    color: #000000;
+}
+
 .textarea {
     margin-top: 10px;
     width: 40%;
