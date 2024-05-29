@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="Resources/css/Dash.css">
-    <title>Magnetic Trader</title>
+    <title>Magnetic Trading</title>
 </head>
 <body>
     <div class="header">
@@ -10,7 +10,7 @@
         <div class="welcome-message">Welcome to Magnetic Trading, User</div>
         <div>
             <button class="buttons">Get Bonus</button>
-            <button class="buttons">Make Deposit</button>
+            <button class="buttons"><a class="butco" href="Deposit.html">Make Deposit</a></button>
             <button class="buttons">Withdraw</button>
         </div>
     </div>
@@ -18,29 +18,23 @@
         <a href="Dashboard.html" class="icon-link"><img src="Resources/img/Dashboard.png" alt="Dashboard"><div class="popup">Dashboard</div></a>
         <a href="Deposit.html" class="icon-link"><img src="Resources/img/Money.png" alt="Funds"><div class="popup">Make Deposit</div></a>
         <a href="Withdraw.html" class="icon-link"><img src="Resources/img/Withdraw.png" alt="Withdraw"><div class="popup">Withdraw</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/History.png" alt="History"><div class="popup">Earnings History</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/Banners.png" alt="Banners"><div class="popup">Your Banners</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/Links.png" alt="Ref. Links"><div class="popup">References</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/Account.png" alt="Edit Account"><div class="popup">Edit Account</div></a>
-        <a href="#" class="icon-link"><img src="Resources/img/LogOut.png" alt="Icon 5"><div class="popup">Logout</div></a>
+        <a href="Earnings.html" class="icon-link"><img src="Resources/img/History.png" alt="History"><div class="popup">Earnings History</div></a>
+        <a href="Banners.html" class="icon-link"><img src="Resources/img/Banners.png" alt="Banners"><div class="popup">Your Banners</div></a>
+        <a href="Referrals.html" class="icon-link"><img src="Resources/img/Links.png" alt="Ref. Links"><div class="popup">References</div></a>
+        <a href="Edits.html" class="icon-link"><img src="Resources/img/Account.png" alt="Edit Account"><div class="popup">Edit Account</div></a>
+        <a href="index.html" class="icon-link"><img src="Resources/img/LogOut.png" alt="Icon 5"><div class="popup">Logout</div></a>
     </div>
 
-    <script>
-        document.querySelectorAll('.icon-link').forEach(link =>{
-            link.addEventListener('click',function(e) {
-                document.querySelectorAll('.icon-link').forEach(link=>
-                link.classList.remove('active'));
-
-                this.classList.add('active');
-            });
-        });
-    </script>
+    <script src="Resources/Js/styling.js"></script>
 
     <div class="main-content">
         <div class="copy-link"> 
             <button class="buttons">Get Banners</button>
-            <button class="buttons">Copy Referal Link</button><br>
-            <textarea class="textarea">This is Your Link</textarea>
+            <div class="referral-link">
+                <button onclick="copyReferralLink()">Copy Referral Link</button>
+                <span>https://intelligencebotminer.com/?ref=BARLION</span>
+                <script src="Resources/Js/styling.js"></script>
+            </div>
         </div>
         <div class="current-balance"><div class="current-balance-box">Current Balance<br><span>$0.00</span></div></div>
         <h4 class="titler">Account Information:</h4>

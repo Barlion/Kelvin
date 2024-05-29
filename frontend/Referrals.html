@@ -37,44 +37,52 @@
             </div>
         </div>
         <div class="current-balance"><div class="current-balance-box">Current Balance<br><span>$0.00</span></div></div>
-        <div class="account-balance-section">\
-            <h4 class="titler">Choose Your Plan:</h4>
-            <div class="text-container1">
-                <div class="box1">
-                    Silver Plan<br><span>7%</span><br><br><span>$50 - 2,999</span><br>After 24 hours<br><br>
-                    <span><button class="buttoner" onclick="changeColor(this)">Click to Select</button><script src="Resources/Js/styling.js"></script></span>
-                </div>
-
-                <div class="box1">
-                    Gold Plan<br><span>12%</span><br><br><span>$3,000 - 14,000</span><br>After 24 hours<br><br>
-                    <span><button class="buttoner" onclick="changeColor(this)">Click to Select</button><script src="Resources/Js/styling.js"></script></span>
-                </div>
-
-                <div class="box1">
-                    Diamond Plan<br><span>18%</span><br><br><span>$15,000 - UNLIMITED</span><br>After 24 hours<br><br>
-                    <span><button class="buttoner" onclick="changeColor(this)">Click to Select</button><script src="Resources/Js/styling.js"></script></span>
-                </div>
-
-            </div>
-        </div>
-        <h4 class="titler">Deposit Method:</h4>
-        <div class="text-container2">
-            <div class="box2">
-                <textarea class="textarea">50.00</textarea> $0/ Main Balance <br><br><br>
-                <form>
-                    <label> <input type="radio" name="Bitcoin" value="Bitcoin"> Deposit from Bitcoin </label>
-                    <label> <input type="radio" name="Bitcoin" value="Bitcoin"> Deposit from USDT[TRC 20]</label>
-                    <label> <input type="radio" name="Bitcoin" value="Bitcoin"> Deposit from Ethereum</label>
-                </form>
-            </div>
-            <div class="center"><button class="buttoner" onclick="changeColor(this)">Submit</button><script src="Resources/Js/styling.js"></script></div><br>
-        </div>
-
-        <h4 class="titler">Deposit History:</h4>
         <div>
-
+            <div class="referral-container">
+                <h2>Your Unique Referral Link:</h2>
+                <div class="referral-link">
+                    <span>https://intelligencebotminer.com/?ref=BARLION</span>
+                    <button onclick="copyReferralLink()">Copy Referral Link</button>
+                </div>
+                <div class="banner-sizes">
+                    <button class="active" onclick="showBanner('125x125')">125x125</button>
+                    <button onclick="showBanner('125x125')">125x125</button>
+                    <button onclick="showBanner('468x60')">468x60</button>
+                    <button onclick="showBanner('468x60')">468x60</button>
+                    <button onclick="showBanner('728x90')">728x90</button>
+                    <button onclick="showBanner('728x90')">728x90</button>
+                </div>
+                <div class="banner-code">
+                    <label for="banner-code">Banner code:</label>
+                    <textarea id="banner-code" rows="3" readonly>
+        <a href="https://intelligencebotminer.com/?ref=BARLION">
+            <img src="https://intelligencebotminer.com/banners/banner125.gif" alt="" width="125" height="125" />
+        </a>
+                    </textarea>
+                </div>
+            </div>
+        
+            <script src="Resources/Js/styling.js"></script>
+            
         </div>
-
+        <div class="referrals-container">
+            <h2>Your Referrals:</h2>
+            <table>
+                <tr>
+                    <td>Referrals:</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Active referrals:</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Total referral commission:</td>
+                    <td>$0.00</td>
+                </tr>
+            </table>
+        </div>
+        
         <div class="contact">
             <h5>Our Social Media</h5>
             <a href="https://www.linkedin.com">LinkedIn</a><br>
@@ -84,5 +92,6 @@
             <a href="https://www.facebook.com">Facebook</a><br>
             <a href="https://www.reddit.com">Reddit</a><br>
         </div>
+</div>
 </body>
 </html>

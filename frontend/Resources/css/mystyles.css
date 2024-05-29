@@ -127,27 +127,30 @@ body {
 
 .text-container {
     display: inline-block;
-    margin: 20px;
+    margin: 10%;
     padding: 25px;
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
-    line-height: 0.8;
+    font-family: cursive;
+    font-size: large;
+    line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: small;
+    
 
 }
 
 .text-container1 {
     display: inline-block;
-    margin-left: 20em;
+    margin-left: 20%;
     padding: 2em;
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
-    line-height: 0.8;
+    font-family: cursive;
+    line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: small;
+    font-size: large;
 }
 
 a {
@@ -161,26 +164,26 @@ a:hover {
 
 .text-container2 {
     text-align: center;
-    margin: 10px;
+    margin: 1%;
     padding: 20px;
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
-    line-height: 1.0;
+    line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: small;
+    font-size: large;
 }
 
 .text-container3 {
     text-indent: 30px;
-    margin: 10px;
+    margin: 1%;
     padding: 20px;
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
-    line-height: 1.0;
+    line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: small;
+    font-size: large;
     display: flex;
     backdrop-filter: blur(10px);
     align-items: center;
@@ -190,14 +193,14 @@ a:hover {
 .text-container4 {
     text-indent: 30px;
     text-align: left;
-    margin: 10px;
+    margin: 1%;
     padding: 20px;
     border-width: 4px;
     border-color: #000;
     border-radius: 50px;
-    line-height: 1.0;
+    line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: small;
+    font-size: large;
 }
 
 .contact {
