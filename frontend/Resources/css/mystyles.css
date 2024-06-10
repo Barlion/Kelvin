@@ -135,7 +135,7 @@ body {
     font-family: cursive;
     font-size: large;
     line-height: 1.5;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
     
 
 }
@@ -149,7 +149,7 @@ body {
     border-radius: 50px;
     font-family: cursive;
     line-height: 1.5;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: large;
 }
 
@@ -170,7 +170,7 @@ a:hover {
     border-color: #000;
     border-radius: 50px;
     line-height: 1.5;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: large;
 }
 
