@@ -1,3 +1,6 @@
 FROM openjdk:11-jre-slim
-COPY build/libs/kelvin-backend-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+WORKDIR /app
+
+COPY . .
+
+ENTRYPOINT ["java", "-jar", "build/libs/kelvin-backend-0.0.1-SNAPSHOT.jar app.jar"]
